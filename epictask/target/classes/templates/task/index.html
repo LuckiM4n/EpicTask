@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Epic Task</h1>
+    <h1>Controle de Compras</h1>
 
-    <a href="/task/new" class="btn"> Nova tarefa</a>
+    <a href="/task/new" class="btn"> Nova Compra</a>
 
     <div class="content">
         <div class="tasks">
@@ -20,7 +20,7 @@
                 <p th:text="${task.score}"></p>
                 <div class="actions">
                     <form th:action="@{'/task/{id}'(id=${task.id})}" th:method="delete">
-                        <button class="btn red">apagar</button>
+                        <button class="btn red">Deletar</button>
                     </form>
                 </div>
             </div>

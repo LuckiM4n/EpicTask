@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Cadastrar Tarefa</h1>
+    <h1>Cadastrar Compras</h1>
 
     <div class="content">
         
         <form th:action="${'/task/new'}" method="post" th:object="${task}">
-            <label for="title">Titulo</label>
+            <label for="title">Titulo das Compras</label>
             <input type="text"  th:field="*{title}">
             <span th:errors="*{title}"></span>
     
@@ -21,7 +21,7 @@
             <textarea th:field="*{description}"></textarea>
             <span th:errors="*{description}"></span>
 
-            <label for="score">Pontos</label>
+            <label for="score">Preço</label>
             <input type="number" th:field="*{score}">
             <span th:errors="*{score}"></span>
 

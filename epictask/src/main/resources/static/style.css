@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 :root{
-	--dark-color: #1F1F1F;
+	--dark-color: #0a0e47;
 	--active-color: #E23221;
 	--primary-font: 'Pridi', serif;
-	--font-color:  rgba(255,255,255,0.8);
+	--font-color:  rgba(255, 255, 255, 0.8);
 }
 
 *{
@@ -23,21 +23,22 @@ html, body {height:100%;}
 
 body{
 	background: var(--dark-color);
-	font-family: var(--primary-font);
+	font-family: "Lucida Console", Courier, monospace;
 	text-decoration: none;
 	color: var(--font-color);
 	margin: 0 20px;	
+	
 }
 
 .content{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 20px;
-	padding-bottom: 3rem;
-	
+	background-color:rgb(13, 13, 13);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 15px;
+    color: rgb(27, 172, 198);
 }
 
 a{
@@ -51,7 +52,7 @@ a:visited{
 
 .yellow, a.yellow { color: #FED851 }
 .red, a.red { color: #BF0059 }
-.blue { color: #13AFE0 }
+.blue { color: #d9e013 }
 
 nav {
 	max-width: 1200px;
@@ -74,8 +75,8 @@ nav li .active {
 	color: var(--active-color);
 	text-shadow: 0px 0px 5px var(--active-color), 
 				 0px 0px 15px var(--active-color);
-	box-shadow:  inset 0px 4px 4px rgba(0, 0, 0, 0.25), 
-				 inset -4px -4px 10px rgba(82, 80, 80, 0.25);
+	box-shadow:  inset 0px 4px 4px rgba(39, 16, 16, 0.25), 
+				 inset -4px -4px 10px rgba(43, 9, 9, 0.25);
 	border-radius: 40px;
 	padding: 5px 25px;
 }
@@ -102,7 +103,7 @@ nav li a:hover{
 }
 
 .btn-primary{
-	background: #00F260;  
+	background: rgb(90, 129, 110);  
 	background: -webkit-linear-gradient(to top, #2A6BE9, #13AFE0);  
 	background: linear-gradient(to top, #2A6BE9, #13AFE0); 
 
@@ -183,7 +184,7 @@ input[type="text"]:focus,
 input[type="password"]:focus, 
 input[type="number"]:focus, 
 textarea:focus{
-	box-shadow: 0px 0px 10px #00A439, 
+	box-shadow: 0px 0px 10px rgb(6, 0, 59), 
 				inset -4px -4px 10px rgba(85, 85, 85, 0.25), 
 				inset 4px 4px 10px rgba(0, 0, 0, 0.25);	
 }
